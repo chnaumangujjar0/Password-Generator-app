@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD-GENERATOR APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: cadetblue;
+    }
+    .card{
+        width: 90%;
+        max-width: 600px;
+        background-color: rgb(32, 188, 123);
+        padding: 20px 20px;
+        margin: 100px 500px;
+        border-radius: 10px;
+    }
+    h1{
+        color: rgb(48, 22, 146);
+        font-size: 3rem;
+     
+       padding: 10px;
+    }
+    h2{
+        padding: 10px;
+        font-size: xx-large;
+        color: rgb(226, 40, 59);
+        text-decoration: underline rgb(11, 228, 232);
+    }
+    .inner-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    #password{
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        outline: 0;
+    }
+    .inner-card button{
+        padding: 10px;
+        font-size: large;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background-color: aliceblue;
+    }
+    button{
+        margin: 10px;
+        padding: 8px 20px;
+        border: none;
+        background-color: #224137;
+        color: #07f4a9;
+        font-size: x-large;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="card">
+         <h1>Generate a</h1>
+         <h2>RANDOM PASSWORD</h2>
+         <div class="inner-card">
+            <input type="text" id="password" placeholder="Password" >
+            <button class="copytext"><i class="fa-regular fa-copy" style="color: #12c791;"></i></i></button>
+        </div>
+        <button class="generate-password">Generate</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
